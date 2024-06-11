@@ -1,0 +1,18 @@
+form {
+    border-radius: 5px;
+    border: solid;
+    margin-left: 700px;
+    margin-right: 700px;
+    text-align: center;
+}
+input {
+    display: block;
+    margin: auto;
+}
+button {
+    display: block;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}

@@ -1,8 +1,17 @@
+body{
+    background-color: #EB0029;
+}
+
+img{
+    width: 20%;
+}
+
 form {
+    background-color: rgb(243, 241, 241);
     border-radius: 5px;
     border: solid;
-    margin-left: 700px;
-    margin-right: 700px;
+    margin-left: 400px;
+    margin-right: 400px;
     text-align: center;
 }
 input {
@@ -14,5 +23,25 @@ button {
     margin: auto;
 }
 h1 {
+
     text-align: center;
+    color:  rgb(243, 241, 241);
+    font-size: 50px;
+}
+span {
+    color: red;
+}
+textarea {
+    display: block;
+    margin: auto;
+}
+select {
+    display: block;
+    margin: auto;
+}
+.textcheck {
+    display: inline;
+}
+p.noDisplay {
+    display: none;
 }

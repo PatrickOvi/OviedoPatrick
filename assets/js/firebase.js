@@ -8,3 +8,4 @@ import { firebaseConfig } from "./credenciales.js";
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig, getfirestore);
+export const db = getfirestore(app);

@@ -9,24 +9,52 @@
     <script type="module" src="./assets/js/scripts.js"></script>
 </head>
 <body>
+    <img src="https://www.riotgames.com/darkroom/800/87521fcaeca5867538ae7f46ac152740:2f8144e17957078916e41d2410c111c3/002-rg-2021-full-lockup-offwhite.jpg" alt="">
     <h1>Solicitud de trabajo</h1>
     <form>
         <label for="name">Ingrese su nombre<span>*</span></label>
         <input type="text" id="nombre" placeholder="nombre">
+        <p class="noDisplay" id="pnombre">Debe ingresar su nombre</p>
         <label for="name">Ingrese su apellido<span>*</span></label>
         <input type="text" id="apellido" placeholder="apellido">
+        <p class="noDisplay" id="papellido">Debe ingresar su apellido</p>
         <label for="number">Ingrese su edad<span>*</span></label>
         <input type="number" id="edad" placeholder="edad">
-        <label for="date">Ingrese su fecha de nacimiento<span>*</span></label>
-        <input type="date" id="fechaNacimiento" >
+        <p class="noDisplay" id="pedad">Debe ingresar su edad</p>
+        <label for="text">ingrese su numero de telefono<span>*</span></label>
+        <input type="tel" id="telefono" placeholder="telefono">
+        <p class="noDisplay" id="ptelefono">Debe ingresar su numero de telefono</p>
         <label for="email">Ingrese su correo<span>*</span></label>
         <input type="email" id="correo" placeholder="correo">
+        <p class="noDisplay" id="pcorreo">Debe ingresar su correo</p>
+        <label for="ubicacion">Seleccione su Pais</label>
         <select name="ubicacion" id="ubicacion"></select>
-        <p>¿ha jugado algun juego de la compañia?</p>
+        <label for="checkbox">¿Ha jugado algun juego de la compañia?<span>*</span></label>
         <input type="checkbox" id="si" >
-        <input type="checkbox" id="no" >
+        <p>Si</p>
+        <input type="checkbox" id="no" > 
+        <p>No</p>
+        <p class="noDisplay" id="pnombre">Debe seleccionar alguna opcion</p>
+        <label for="textarea">Ingrese alguna consulta que quiera hacer</label>
         <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-        <button id="registrarU">Enviar</button>
+        <button onclick="validarcampo()" id="registrarU">Enviar</button>
     </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Ubicacion</th>
+                <th>¿Ha jugado juegos de la compañia?</th>
+                <th>Consulta</th>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+
+        </tbody>
+    </table>
 </body>
 </html>

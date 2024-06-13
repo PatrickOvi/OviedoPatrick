@@ -45,3 +45,12 @@ select {
 p.noDisplay {
     display: none;
 }
+.btnFondo{
+    background-color: white;
+    color: black;
+    width: 30%;
+}
+.btnFuente{
+    font-size: large;
+    
+}

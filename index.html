@@ -10,34 +10,41 @@
 </head>
 <body>
     <img src="https://www.riotgames.com/darkroom/800/87521fcaeca5867538ae7f46ac152740:2f8144e17957078916e41d2410c111c3/002-rg-2021-full-lockup-offwhite.jpg" alt="">
-    <h1>Solicitud de trabajo</h1>
+    <div>
+        <button class="btnFondo" id="btnfondo" onclick="cambiarFondo()">Fondo</button>
+        <button class="btnFuente" id="btnfuente" onclick="cambiarFuente()">Fuente</button>
+    </div>
+    <h1 class="zFuente">Solicitud de trabajo</h1>
     <form>
-        <label for="name">Ingrese su nombre<span>*</span></label>
+        <label class="zFuente" for="name">Ingrese su nombre<span>*</span></label>
         <input type="text" id="nombre" placeholder="nombre">
         <p class="noDisplay" id="pnombre">Debe ingresar su nombre</p>
-        <label for="name">Ingrese su apellido<span>*</span></label>
+        <label class="zFuente" for="name">Ingrese su apellido<span>*</span></label>
         <input type="text" id="apellido" placeholder="apellido">
         <p class="noDisplay" id="papellido">Debe ingresar su apellido</p>
-        <label for="number">Ingrese su edad<span>*</span></label>
+        <label class="zFuente" for="number">Ingrese su edad<span>*</span></label>
         <input type="number" id="edad" placeholder="edad">
         <p class="noDisplay" id="pedad">Debe ingresar su edad</p>
-        <label for="text">ingrese su numero de telefono<span>*</span></label>
+        <label class="zFuente" for="text">ingrese su numero de telefono<span>*</span></label>
         <input type="tel" id="telefono" placeholder="telefono">
         <p class="noDisplay" id="ptelefono">Debe ingresar su numero de telefono</p>
-        <label for="email">Ingrese su correo<span>*</span></label>
+        <label class="zFuente" for="email">Ingrese su correo<span>*</span></label>
         <input type="email" id="correo" placeholder="correo">
         <p class="noDisplay" id="pcorreo">Debe ingresar su correo</p>
-        <label for="ubicacion">Seleccione su Pais</label>
-        <select name="ubicacion" id="ubicacion"></select>
-        <label for="checkbox">¿Ha jugado algun juego de la compañia?<span>*</span></label>
-        <input type="checkbox" id="si" >
-        <p>Si</p>
-        <input type="checkbox" id="no" > 
-        <p>No</p>
+        <label class="zFuente" for="ubicacion">Seleccione su Pais</label>
+        <select name="ubicacion" id="ubicacion">
+            <option value="Chile">Chile</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Peru">Peru</option>
+        </select>
+        <label class="zFuente" for="radio">Marque si esque a jugado algun juego de la compañia<span>*</span></label>
+        <input type="radio" id="radio" value="si">
         <p class="noDisplay" id="pnombre">Debe seleccionar alguna opcion</p>
-        <label for="textarea">Ingrese alguna consulta que quiera hacer</label>
+        <label class="zFuente" for="textarea">Ingrese alguna consulta que quiera hacer</label>
         <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-        <button onclick="validarcampo()" id="registrarU">Enviar</button>
+        <button type="button" id="registrarU">Enviar</button>
     </form>
     <table>
         <thead>
